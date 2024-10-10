@@ -1,0 +1,11 @@
+enter_price = input('enter_price:')
+enter_price = float(enter_price)
+enter_discount = input('enter_discount:')
+enter_discount = float(enter_discount)
+discount = enter_discount/100*enter_price
+price_with_discount = enter_price-discount
+reduction = enter_price-price_with_discount
+print(f'regular_price = {enter_price}')
+print(f'discount = {enter_discount}')
+print(f'price_with_discount = {price_with_discount}')
+print(f'reduction = {reduction}')
