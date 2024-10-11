@@ -1,0 +1,5 @@
+swift = input('your bank code: ')
+print(f'Bank Code is: {swift[0:4]}')
+print(f'Country Code is: {swift[4:6]}')
+print(f'Location code is: {swift[6:8]}')
+print(f'Branch code is: {swift[8:11]}')
