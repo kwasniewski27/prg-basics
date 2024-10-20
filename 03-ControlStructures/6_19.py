@@ -1,0 +1,8 @@
+print('SURVEY')
+computer_science = input('Are you interested in computer science? (y/n): ')
+computer_games = input('Do you like playiong computer games? (y/n): ')
+instagram_account = input('Do you have instagram account? (y/n): ')
+print('SURVEY RESULTS')
+print(f'Interested in computer science: {computer_science}')
+print(f'Playing computer games: {computer_games}')
+print(f'Has an instagram account: {instagram_account}')
