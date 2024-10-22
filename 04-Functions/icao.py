@@ -57,13 +57,12 @@ def icao(letter):
         icao_name = 'Zulu'
     else:
         icao_name = '???'
-
     return icao_name
 
 # Function usage
 name = input('Enter your name: ')
-print('ICAO words for spelling out your name:')
+print('ICAO words for spelling out your name: ')
+for char in name:
+    word = icao(char)
+    print(word, end=" ") 
 
-for char in ...:
-    word = icao...
-    print(..., end=" ") 
