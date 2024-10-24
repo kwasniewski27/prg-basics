@@ -1,6 +1,6 @@
 def input_string(message):
     user_input = input(message)
-    return user_input(message)
+    return user_input
 
 def input_integer(message):
     user_input = int(input(message))
@@ -11,7 +11,7 @@ def input_real(message):
     return user_input
 
 def input_boolean(message):
-    user_input = input(message).capitalize
+    user_input = input(message).capitalize()
     if user_input == 'Y':
         return True
     elif user_input == 'N':
