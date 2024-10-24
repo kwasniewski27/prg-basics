@@ -2,9 +2,8 @@
 # ATM (cash machine) simulator
 #
 balance = 1000  # Initial balance
-pin = '1111'
-int(input('enter your pin: '))
-while True:
+pin = int(input('enter your pin: '))
+while pin == 1111:
     print()
     print("ATM Menu:")
     print("1. Check balance")

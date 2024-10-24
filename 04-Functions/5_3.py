@@ -1,18 +1,18 @@
-###
-# Functions to read any data type from the keyboard
-#
-def input_string(message):
-    result = input(message)
-    return result
+import keyboard 
 
-def input_integer(message):
-    result = input(message)
-    return result
+# Reads employee's data from keyboard
+first_name = input_string('Enter name: ')
+last_name = input_string('Enter last name: ')
+age = input_integer('Enter your age: ')
+salary = input_real('Enter your salary: ')
+is_salary_hidden = input_boolean('Hide salary? (y/n)')
 
-def input_real(message):
-    result = input(message)
-    return result
-
-def input_boolean(message):
-    result = input(message)
-    return result
+# Prints employee's record
+print('DATA RECORD')
+print('===========')
+print(f'Name:{first_name}', {last_name})
+print(f'age: {age}')
+if not is_salary_hidden:
+    print(f'Salary: {salary}')
+else:
+    print('Salary is hidden')

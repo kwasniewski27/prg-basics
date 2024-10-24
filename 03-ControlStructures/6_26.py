@@ -1,16 +1,16 @@
-pin = "0805"
-pin_1 = int(input('Enter your pin: '))
-if pin_1 == pin:
+pin = int(input('Enter your pin: '))
+correct_pin = '0805'
+if pin == correct_pin:
     print('Correct pin')
 else:
     print('Incorrect pin, try again')
-    pin_2 = int(input('Enter your pin: '))
-if pin_2 == pin:
+    pin = int(input('Enter your pin: '))
+if pin == correct_pin:
     print('Correct pin')
 else:
     print('Incorrect pin, try again')
-    pin_3 = int(input('Enter your pin: '))
-if pin_3 == pin:
+    pin = int(input('Enter your pin: '))
+if pin == correct_pin:
     print('Correct pin')
 else:
     print('Incorrect pin, try again')
