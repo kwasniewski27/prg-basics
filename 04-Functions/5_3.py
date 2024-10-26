@@ -10,7 +10,7 @@ is_salary_hidden = input_boolean('Hide salary? (y/n)')
 # Prints employee's record
 print('DATA RECORD')
 print('===========')
-print(f'Name:{first_name}', {last_name})
+print(f'Name:{first_name}', (last_name))
 print(f'age: {age}')
 if not is_salary_hidden:
     print(f'Salary: {salary}')

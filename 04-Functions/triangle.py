@@ -8,12 +8,12 @@ window.bgcolor("lightgreen")
 pen = turtle.Turtle()
 pen.speed(5)
 
-def draw_square():
-    for _ in range(4):
+def draw_triangle():
+    for _ in range(3):
         pen.forward(side_length)
-        pen.right(90)
-# Draw a square
-draw_square(side_length)
+        pen.right(120)
+
+draw_triangle(side_length)
 
 # Finish
 window.mainloop()
