@@ -14,4 +14,6 @@ def f(amount_to_pay):
     elif amount_to_pay < 2:
         amount1pln = int(amount_to_pay/1)
         sum = amount1pln
-        print()
+    return sum
+print(f(13))
+print(f(65))
