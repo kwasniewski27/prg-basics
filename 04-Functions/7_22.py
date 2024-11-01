@@ -1,6 +1,6 @@
 def f(name):
-    acronym = ""
     names = name.split()
+    acronym = ''
     for name in names:
         for char in name:
             if char == name[0]:
@@ -8,4 +8,3 @@ def f(name):
     return acronym
 print(f("Internet of Things"))
 print(f("For Your Information"))
-print(f("Python"))

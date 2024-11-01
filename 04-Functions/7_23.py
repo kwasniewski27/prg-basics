@@ -1,13 +1,15 @@
 def f(password):
+    seen = set()
     if len(password)<6:
         return False
-    used = set()
     for char in password:
-        if char in used:
+        if char in seen:
             return False
-        used.add(char)
+        else:
+            seen.add(char)
     return True
 print(f("ax15"))
 print(f("book123"))
 print(f("A2water3"))
 print(f("qwerty"))
+print(f(""))

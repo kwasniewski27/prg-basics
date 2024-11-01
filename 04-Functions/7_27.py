@@ -1,12 +1,12 @@
 def f(product_code):
-    last_digit = int(product_code[3])
+    product_code = str(product_code)
     first_three = product_code[:3]
-    suma = sum(int(digit) for digit in first_three)
-    if suma%7== last_digit:
-        return True
-    else:
-        return False
-print(f("1082"))
-print(f("2035"))
-print(f("1114"))
-print(f("7071"))
+    last = int(product_code[3])
+    sum = 0
+    for digit in first_three:
+        digit = int(digit)
+        sum += digit
+    return sum%7 == last
+print(f(1082))
+print(f(2035))
+print(f(1114))

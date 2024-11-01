@@ -1,7 +1,6 @@
 def f(text):
-    result = '-'.join(text)
-    return result
-print(f("University"))
+    expanded = '-'.join(text)
+    return expanded
+print(f("Univesity"))
 print(f("UE"))
 print(f("x"))
-print(f(""))

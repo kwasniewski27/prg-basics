@@ -1,4 +1,4 @@
-def f(card_number):
-    hidden_card_number = card_number[0:2] + '*' * 10 + card_number[-4:]
-    return hidden_card_number
-print(f("5290312400019022"))
+def hide(card_number):
+    hidden_number = card_number[0:2] + 10 * '*' + card_number[-4:]
+    return hidden_number
+print(hide("5290312400019022"))
