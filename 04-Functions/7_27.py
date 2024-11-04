@@ -6,7 +6,8 @@ def f(product_code):
     for digit in first_three:
         digit = int(digit)
         sum += digit
-    return sum%7 == last
-print(f(1082))
-print(f(2035))
-print(f(1114))
+    return sum%7==last   
+print(f("1082"))
+print(f("2035"))
+print(f("1114"))
+print(f("7071"))

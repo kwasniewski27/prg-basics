@@ -1,7 +1,7 @@
 def f(detector):
     total = 0
     max_total = 0
-    for char in str(detector):
+    for char in detector:
         if char == '+':
             total += 1
         elif char == '-':
@@ -13,5 +13,3 @@ def f(detector):
         return False
 print(f("+-+++-+---"))
 print(f("+-+-+-+-"))
-print(f("+-++-+--"))
-print(f("+-++-++-+---"))

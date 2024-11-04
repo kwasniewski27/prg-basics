@@ -1,6 +1,7 @@
 def f(text):
-    expanded = '-'.join(text)
-    return expanded
+    dash = '-'.join(text)
+    return dash
 print(f("Univesity"))
 print(f("UE"))
 print(f("x"))
+print(f(""))

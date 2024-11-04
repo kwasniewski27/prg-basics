@@ -1,10 +1,6 @@
-def f(x,y):
-    total = 0
-    for i in range(x,y):
-        if i < 0  and i % 2 ==0:
-            total += 1
-        else:
-            continue
-    return total
-print(f(-7,8))
-print(f(-1,11))
+def f(n1,n2,n3):
+    if n1<0 or n2<0 or n3<0:
+        return True
+    return False
+print(f(11,6,-4))
+print(f(5,4,14))
