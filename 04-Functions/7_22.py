@@ -5,9 +5,6 @@ def f(name):
         for char in name:
             if char == name[0]:
                 acronym += char
-            else:
-                continue
     return acronym
 print(f("Internet of Things"))
 print(f("For Your Information"))
-print(f("Python"))

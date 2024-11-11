@@ -1,18 +1,19 @@
 def f(expression):
     total = 0
     current_number = 0
-    current_operation = '+'
+    current_operator = '+'
     for char in expression:
-        if char.isdigit():
+        if char.isdigit() :
             current_number = int(char)
         elif char in '+-':
-            if current_operation == '+':
+            if current_operator == '+':
                 total += current_number
-            if current_operation == '-':
+            elif current_operator == '-':
                 total -= current_number
-    if current_operation == '+':
+            current_operator = char
+    if current_operator == '+':
         total += current_number
-    if current_operation == '-':
+    elif current_operator == '-':
         total -= current_number
     return total
 print(f("2+3"))

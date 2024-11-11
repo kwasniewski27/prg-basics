@@ -1,10 +1,10 @@
 def f(detector):
     total = 0
     max_total = 0
-    for char in detector:
-        if char == '+':
+    for sign in detector:
+        if sign == '+':
             total += 1
-        elif char == '-':
+        elif sign == '-':
             total -= 1
         max_total = max(max_total, total)
     if max_total>=3:
@@ -13,3 +13,5 @@ def f(detector):
         return False
 print(f("+-+++-+---"))
 print(f("+-+-+-+-"))
+print(f("+-++-+--"))
+print(f("+-++-++-+---"))

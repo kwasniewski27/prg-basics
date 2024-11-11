@@ -4,9 +4,9 @@ def f(number, even):
     number = str(number)
     for digit in number:
         digit = int(digit)
-        if digit%2==0:
+        if digit %2 ==0:
             evens += digit
-        elif digit%2 != 0:
+        elif digit %2 != 0:
             odd += digit
     if even:
         return evens

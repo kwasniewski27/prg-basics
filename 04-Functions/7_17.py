@@ -1,6 +1,6 @@
 def f(palindrome):
     pal = palindrome[::-1]
-    if palindrome == pal:
+    if pal == palindrome:
         return True
     else:
         return False
