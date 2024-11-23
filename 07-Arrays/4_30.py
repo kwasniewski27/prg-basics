@@ -1,4 +1,4 @@
-arr = [
+multiplication = [
     [0,0,0,0,0],
     [0,0,0,0,0],
     [0,0,0,0,0],
@@ -6,11 +6,8 @@ arr = [
     [0,0,0,0,0]
 ]
 
-for row in arr:
-    if row[0]:
-        for i in range (len(row)):
-            row1 = [i for i in range (1,6)]
-    elif row[2]:
-        for i in range (len(row)):
-            row = [i*2 for i in range (1,6)]
-        print(row1 + row)
+for i in range(5):
+    for j in range(5):
+        multiplication[i][j] = (i+1)*(j+1)
+for rows in multiplication:
+    print(rows)
