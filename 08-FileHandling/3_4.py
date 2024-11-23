@@ -12,7 +12,7 @@ with open(email_file, 'r') as file:
 
 # regular expression pattern
 # for amounts
-pattern = '\d+'
+pattern = '\\d+'
 
 # extract numbers from email
 # tip: findall() method returns an array
@@ -21,7 +21,8 @@ amounts = re.findall(pattern, content)
 # calculate the total purchases
 total = 0
 for amount in amounts:
-   total += int(amount)
+   amount.replace(",", "")
+   total += float(amount)
 
 # print result
 print(total)
