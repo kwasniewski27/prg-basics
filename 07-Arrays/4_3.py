@@ -1,3 +1,7 @@
 arr = [8,2,5,1,9]
-for i in (arr):
-    print(i**2, end=' ')
+def second_power(arr):
+    square = []
+    for i in arr:
+        square.append(i**2)
+    return square
+print(second_power(arr))

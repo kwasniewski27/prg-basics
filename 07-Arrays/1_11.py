@@ -21,19 +21,17 @@ max_temp = max(temperatures)
 negative_temp = 0
 i = 0
 while i < len(temperatures):
-    if temp < 0:
+    if temperatures[i] < 0:
         negative_temp += 1
     i += 1
 
 # prints out month report
 
-message = f"""
-TEMPERATURE REPORT
-Month: March
-Number of measurements: {mesaurements}
-Average temperature in the month:{avg_temp}
-Minimum temperature:{min_temp}
-Maximum temperature:{max_temp}
-Number of days with negative temperature:{negative_temp}
-"""
-print(message)
+
+print("TEMPERATURE REPORT")
+print("Month: March")
+print(f'Number of measurements: {mesaurements}')
+print(f'Average temperature in the month:{avg_temp}')
+print(f'Minimum temperature:{min_temp}')
+print(f'Maximum temperature:{max_temp}')
+print(f'Number of days with negative temperature:{negative_temp}')
