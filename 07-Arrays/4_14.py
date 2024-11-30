@@ -1,2 +1,2 @@
 tuple = ("computation",)
-print(type(tuple))
+print(tuple)
