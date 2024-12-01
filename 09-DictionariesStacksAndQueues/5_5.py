@@ -1,10 +1,10 @@
 paragraph = "cat dog mouse cat rat cat mouse"
-dictionary = {}
+dic = {}
 words = paragraph.split()
 for word in words:
-    if word in dictionary:
-        dictionary[word] += 1
+    if word in dic:
+        dic[word] += 1
     else:
-        dictionary[word] = 1 
-for word, count in dictionary.items():
-    print(f"{word} appears in text {count} times")
+        dic[word] = 1
+for word, count in dic.items():
+    print(f'Wyraz {word} wystepuje w tekscie {count} razy')

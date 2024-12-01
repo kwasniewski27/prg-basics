@@ -17,9 +17,8 @@ def hotel_list(hotels):
 def avg_price(hotels):
     total = 0
     for x in hotels:
-        if x['price']:
-            total += x['price']
-            average =  round(total/len(hotels))
+        total += x['price']
+        average =  round(total/len(hotels))
     return average
 hotel_list(hotels_in_Krakow)
 print()

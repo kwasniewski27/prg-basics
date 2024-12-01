@@ -4,6 +4,6 @@ winter_semester = {
    "history":15
 }
 total = 0
-for key,value in winter_semester.items():
+for key, value in winter_semester.items():
     total += value
-print(f"The total number of hours in the winter semester is {total}")
+print(f'The total number of hours in the winter semester is {total}')

@@ -1,26 +1,23 @@
 import queue
 stack = queue.LifoQueue()
 while True:
-    print('Number to push it on stack')
-    print('Operation to calculate two last elements with this operation: ')
-    print('Equal sign to display final sum')
-    something = input('Enter: ')
-    if something.isdigit():
-        stack.put(int(something))
-    elif something in '+*-/':
-        first = stack.get()
-        second = stack.get()
-        if something == '+':
-            result = first + second
-        elif something == '*':
-            result = first * second
-        elif something == '-':
-            result = first - second
-        elif something == '/':
-            result = first/second
+    on_stack = input('Enter:')
+    if on_stack.isdigit():
+        stack.put(int(on_stack))
+    elif on_stack in '+ - * /':
+        num1 = stack.get()
+        num2 = stack.get()
+        if on_stack == '+':
+            result = num1+num2
+        elif on_stack == '-':
+            result = num1-num2
+        elif on_stack == '*':
+            result = num1*num2
+        elif on_stack == '/':
+            result = num1/num2
         stack.put(result)
-    elif something == '=':
-        if not stack.empty():
-            expression = stack.get()
-            print(expression)
-            break
+    elif on_stack == '=':
+        while not stack.empty():
+            stackk = stack.get()
+            print(stackk)
+        break

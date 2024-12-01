@@ -4,8 +4,8 @@ translations = {
    'keyboard': 'klawiatura',
    'printer': 'drukarka'
 }
-word = input('Enter word to be translated: ')
+word = input('Enter the word you want to translate in english: ')
 if word in translations:
-    print(f"{word} = {translations[word]}")
+    print(f'{word} means {translations[word]}')
 else:
-    print(f'There is no such word as {word} in our translations')
+    print('Ther is no such name in our translations')

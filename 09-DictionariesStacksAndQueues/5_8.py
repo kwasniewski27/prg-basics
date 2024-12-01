@@ -4,7 +4,9 @@ prices = {'milk': 1.49, 'butter': 2.09, 'juice': 1.19, 'bread': 1.99}
 # Shopping cart with quantities
 cart = {'juice': 3, 'bread': 1, 'milk': 2}
 total = 0
-for item in cart:
-    if item in prices:
-        total += prices[item] * cart[item]
+# Calculate total cost
+for product1, price in prices.items():
+    for product2, quantity in cart.items():
+        if product1 == product2:
+            total += price*quantity
 print(total)

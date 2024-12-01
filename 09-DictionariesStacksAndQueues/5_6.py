@@ -8,6 +8,6 @@ advanced_data = {
    "married":False,
    "interest":["reading","swimming"]
 }
-person = basic_data | advanced_data
-for key, value in person.items():
-    print(f"{key} : {value}")
+person = {}
+person = basic_data|advanced_data 
+print(person)
