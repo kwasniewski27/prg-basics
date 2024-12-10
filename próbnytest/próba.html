@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz</h1>
+    </header>
+    <div class="container">
+        <form action="#">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię" required>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Wpisz swoje nazwisko" required>
+
+            <label for="wybór">Wybierz technologię:</label>
+            <select id="wybór" name="wybór">
+                <option value="komputer">Komputer</option>
+                <option value="sieć">Sieć</option>
+                <option value="oprogramowanie">Oprogramowanie</option>
+                <option value="chmura">Chmura obliczeniowa</option>
+            </select>
+
+            <button type="submit">Zapisz</button>
+            <button type="reset">Anuluj</button>
+        </form>
+    </div>
+</body>
+</html>

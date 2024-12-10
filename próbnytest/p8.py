@@ -10,7 +10,7 @@ def f(expression):
             if char == '+':
                 result = num1 + num2
             elif char == '-':
-                result = num1-num2
+                result = num1 -num2
             stack.append(result)
     return stack.pop()
 print(f("2 3 +"))
