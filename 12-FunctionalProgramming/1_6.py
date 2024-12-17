@@ -1,0 +1,5 @@
+distance = int(input('Enter your distance in km: '))
+hours = int(input('Enter your travel hours: '))
+minutes = int(input('Enter your travel minutes: '))
+speed = lambda distance, hours, minutes : distance/(hours+minutes/60)
+print(round(speed(distance, hours, minutes),2))
